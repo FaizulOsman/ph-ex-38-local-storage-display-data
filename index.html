@@ -6,14 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- Link Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
-    <section>
-        <input id="product-input" placeholder="Enter your product name" type="text">
-        <input id="price-input" placeholder="Enter your price" type="text">
-        <button id="add-details-btn">Add Details</button>
-        <ul id="product-details"></ul>
+    <section class="mx-auto mt-10 text-center">
+        <input id="product-input" class="border border-2 border-blue-400 p-2 rounded-md"
+            placeholder="Enter your product name" type="text"><br>
+        <input id="price-input" class="border mt-2 border-2 border-blue-400 p-2 rounded-md"
+            placeholder="Enter your price" type="text"><br>
+        <button id="add-details-btn" class="bg-blue-400 text-white mt-2 p-2 rounded-md">Add Details</button>
+    </section>
+    <section class="w-1/2 mx-auto">
+        <ul id="product-details" class="mt-10"></ul>
     </section>
 
     <script src="script.js"></script>

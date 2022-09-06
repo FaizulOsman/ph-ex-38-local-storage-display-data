@@ -29,10 +29,11 @@ const existProduct = () => {
 }
 
 // Display Data in UI
+let count = 0
 const displayData = (product, price) => {
     const personDetails = document.getElementById('product-details')
     const li = document.createElement('li')
-    li.innerHTML = `${product} : ${price}`
+    li.innerHTML = `${++count}. ${product} : ${price}`
     personDetails.appendChild(li)
 }
 
